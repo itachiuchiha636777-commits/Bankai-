@@ -25,12 +25,12 @@ MongoClient.connect(MONGO_URI)
 
 // Gmail Transporter (100% Free OTP)
 const transporter = nodemailer.createTransport({
-  // service: "gmail",
+  service: "gmail",
   //auth: { user: GMAIL_USER, pass: GMAIL_APP_PASS },
   //});
-  host: "://gmail.com",
-  port: 465,
-  secure: true,
+ // host: "://gmail.com",
+ // port: 465,
+  //secure: true,
   auth: {
     user: GMAIL_USER,
     pass: GMAIL_APP_PASS ? GMAIL_APP_PASS.replace(/\s+/g, "") : "",
